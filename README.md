@@ -107,7 +107,7 @@ Proyecto desarrollado como parte del Grado en Ingeniería Informática - Univers
 
 * **Pablo del Prado** - *Backend, Chat System & Database Architecture*
 * **Juan de Frutos** - *Frontend Logic, Controllers & CRUD Operations*
-* **Marcos Martín** - *Role Management, Access Control & Security Logs*
+* **Marcos Martín** - *Role Management,Sensor Control and Simulation, Access Control & Security Logs*
 * **Germán Sierra** - *Sensor Simulation & Database Design*
 
 ---
