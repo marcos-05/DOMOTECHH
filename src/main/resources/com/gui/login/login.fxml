@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="540.0" prefWidth="960.0" styleClass="root-interface1" stylesheets="@../../../css/style.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gui.login.LoginController">
+   <children>
+      <VBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" spacing="25.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextField fx:id="txt_username" maxHeight="60.0" maxWidth="500.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="200.0" promptText="User" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 3px 0px; -fx-border-color: white; -fx-alignment: white;" stylesheets="@../../../css/style.css">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="text-field:focused" />
+                  <String fx:value="text-field" />
+               </styleClass>
+            </TextField>
+            <PasswordField fx:id="txt_password" maxHeight="60.0" maxWidth="500.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="200.0" promptText="Password" style="-fx-border-width: 0px 0px 3px 0px; -fx-background-color: trasparent; -fx-border-color: white;" styleClass="password-field">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </PasswordField>
+            <Label fx:id="lbl_validation" prefHeight="30.0" prefWidth="221.0" styleClass="label-texto" stylesheets="@../../../css/style.css" />
+            <Button fx:id="btn_login" maxHeight="40.0" maxWidth="300.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#loginValidate" prefHeight="40.0" prefWidth="180.0" style="-fx-text-fill: white;" stylesheets="@../../../css/style.css" text="LOG IN" VBox.vgrow="ALWAYS">
+               <styleClass>
+                  <String fx:value=".jfx-button:pressed" />
+                  <String fx:value="jfx-button" />
+                  <String fx:value="jfx-button:hover" />
+               </styleClass>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect></Button>
+            <Label prefHeight="29.0" prefWidth="284.0" stylesheets="@../../../css/style.css" text="Si no tienes cuenta, no dudes en registrarte">
+               <styleClass>
+                  <String fx:value="label-texto" />
+                  <String fx:value="label" />
+               </styleClass></Label>
+            <Button fx:id="btn_singup" alignment="CENTER" maxHeight="80.0" maxWidth="200.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#singup" prefHeight="40.0" prefWidth="200.0" stylesheets="@../../../css/style.css" text="SINGUP">
+               <styleClass>
+                  <String fx:value=".jfx-button:pressed" />
+                  <String fx:value="jfx-button" />
+                  <String fx:value="jfx-button:hover" />
+               </styleClass>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="200.0" left="320.0" right="320.0" top="300.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

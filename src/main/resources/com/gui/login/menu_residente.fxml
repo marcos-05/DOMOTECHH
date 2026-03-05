@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" styleClass="root-interfaceresidente" stylesheets="@../../../css/style.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gui.login.ResidenteController">
+   <children>
+      <VBox fx:id="vboxPrincipal" alignment="TOP_RIGHT" maxHeight="200.0" prefHeight="78.0" prefWidth="960.0" stylesheets="@../../../css/style.css" AnchorPane.bottomAnchor="450.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+
+            <Button fx:id="logout" maxHeight="40.0" maxWidth="90.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#VolverLogin" prefHeight="40.0" prefWidth="90.0" stylesheets="@../../../css/style.css" text="Log out">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+               <styleClass>
+                  <String fx:value="jfx-button" />
+                  <String fx:value="jfx-button:pressed" />
+                  <String fx:value="jfx-button:hover" />
+               </styleClass>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+      <VBox fx:id="vboxPrincipal2" alignment="CENTER" layoutX="10.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" spacing="25.0" stylesheets="@../../../css/style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="90.0">
+         <children>
+            <Button fx:id="access" alignment="CENTER" maxHeight="80.0" maxWidth="600.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#accesoInteligente" prefHeight="40.0" prefWidth="150.0" stylesheets="@../../../css/style.css" text="ACCESO INTELIGENTE" VBox.vgrow="ALWAYS">
+               <styleClass>
+                  <String fx:value=".jfx-button:pressed" />
+                  <String fx:value="jfx-button" />
+                  <String fx:value="jfx-button:hover" />
+               </styleClass>
+               <effect>
+                  <Lighting light="$null">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                  </Lighting>
+               </effect>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button layoutX="390.0" layoutY="228.0" maxHeight="80.0" maxWidth="600.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AbrirRegistros" prefHeight="40.0" prefWidth="150.0" style="-fx-text-fill: white;" stylesheets="@../../../css/style.css" text="REGISTROS" VBox.vgrow="ALWAYS">
+               <styleClass>
+                  <String fx:value=".jfx-button:pressed" />
+                  <String fx:value="jfx-button" />
+                  <String fx:value="jfx-button:hover" />
+               </styleClass>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+            <Button fx:id="btnChat" layoutX="390.0" layoutY="196.0" maxHeight="80.0" maxWidth="600.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AbrirChat" prefHeight="40.0" prefWidth="150.0" style="-fx-text-fill: white;" stylesheets="@../../../css/style.css" text="CHAT" VBox.vgrow="ALWAYS">
+               <styleClass>
+                  <String fx:value=".jfx-button:pressed" />
+                  <String fx:value="jfx-button" />
+                  <String fx:value="jfx-button:hover" />
+               </styleClass>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+            <Button fx:id="btnPulsometro" maxHeight="80.0" maxWidth="600.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#onGenerarDatoPulsometro" prefHeight="40.0" prefWidth="150.0" style="-fx-text-fill: white;" stylesheets="@../../../css/style.css" text="PULSÓMETRO">
+               <styleClass>
+                  <String fx:value=".jfx-button:pressed" />
+                  <String fx:value="jfx-button" />
+                  <String fx:value="jfx-button:hover" />
+               </styleClass>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+            <Label fx:id="etiquetaAvisoPulsometro" text="" style="-fx-text-fill: green;" />
+         </children>
+         <padding>
+            <Insets bottom="200.0" left="350.0" right="350.0" top="200.0" />
+         </padding>
+      </VBox>
+      <VBox layoutX="10.0" layoutY="10.0" maxHeight="200.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="450.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="500.0" AnchorPane.topAnchor="0.0">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <children>
+            <Label fx:id="user" prefHeight="30.0" prefWidth="167.0" stylesheets="@../../../css/style.css">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+               <styleClass>
+                  <String fx:value="jfx-button" />
+                  <String fx:value="jfx-button:hover" />
+                  <String fx:value=".jfx-button:pressed" />
+               </styleClass>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</AnchorPane>

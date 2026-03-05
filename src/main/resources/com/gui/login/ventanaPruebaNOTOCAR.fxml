@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gui.login.VentanaPruebaNOTOCARController">
+   <children>
+      <Button fx:id="btn" layoutX="259.0" layoutY="175.0" mnemonicParsing="false" onAction="#AbrirPuerta" text="AbrirPuerta" />
+      <Button fx:id="btn2" layoutX="246.0" layoutY="228.0" mnemonicParsing="false" onAction="#mostrarRegistros" text="MostrarRegistro" />
+      <TextField fx:id="txt" layoutX="223.0" layoutY="269.0" />
+      <Label fx:id="lblRegistros" layoutX="223.0" layoutY="305.0" prefHeight="90.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

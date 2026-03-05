@@ -1,0 +1,287 @@
+/* Background for Interface 1 */
+.root-interface1 {
+    -fx-background-image: url("../images/2.png");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+}
+
+/* Background for Interface 2 */
+.root-interfacepresidente {
+    -fx-background-image: url("../images/4.png");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+}
+
+/* Background for Interface 3 */
+.root-interfaceresidente {
+    -fx-background-image: url("../images/5.png");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+}
+/* Background for Interface 3 */
+.root-interfaceSaldo {
+    -fx-background-image: url("../images/22.png");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+}
+.root-interfaceportero {
+    -fx-background-image: url("../images/6.png");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+}
+.root-interfacetecnico {
+    -fx-background-image: url("../images/7.png");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+}
+.root-interfaceIluminacion {
+    -fx-background-image: url("../images/8.png");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+}
+.root-interfaceCONTROL {
+    -fx-background-image: url("../images/CONTROL.png");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+}
+.root-interfaceRegistro{
+    -fx-background-image: url("../images/9.png");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+}
+.root-interfaceAlertas {
+    -fx-background-image: url("../images/10.png");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+}
+.root-interfaceMapa {
+    -fx-background-image: url("../images/x.png");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+}
+.root-interfaceAcceso {
+    -fx-background-image: url("../images/13.png");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+}
+.root-interfaceChat {
+    -fx-background-image: url("../images/12.png");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+}
+
+.text-field, .password-field {
+    -fx-background-color: transparent; /* Fondo transparente */
+    -fx-border-color: transparent transparent white transparent; /* Solo la parte inferior tendrá color */
+    -fx-border-width: 0 0 2px 0; /* Grosor del borde inferior */
+    -fx-border-radius: 0 0 5px 5px; /* Bordes inferiores redondeados */
+    -fx-font-size: 16px; /* Tamaño del texto */
+    -fx-text-fill: white; /* Texto en color blanco */
+    -fx-prompt-text-fill: rgb(128, 128, 128); /* Texto del placeholder en gris */
+    -fx-padding: 5px 10px; /* Espaciado interno */
+}
+
+/* Efecto al enfocar (cuando se selecciona el campo) */
+.text-field:focused, .password-field:focused {
+    -fx-border-color: transparent transparent #00bfff transparent; /* Cambia el color del borde inferior */
+    -fx-border-width: 0 0 3px 0; /* Aumenta el grosor del borde inferior */
+    -fx-font-size: 16px; /* Mantén el tamaño del texto */
+}
+
+/* Shared Style for Label */
+.label {
+    -fx-text-fill: #333333;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-padding: 5px;
+    -fx-alignment: center;
+}
+.label-texto {
+    -fx-text-fill: #959393;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-padding: 5px;
+    -fx-alignment: center;
+}
+
+
+/* Style for JFXButton with Blue background and Futuristic font */
+.jfx-button {
+    -fx-background-color: #009dff; /* Fondo azul */
+    -fx-text-fill: white; /* Texto blanco */
+    -fx-font-family: 'Arial', sans-serif; /* Fuente alternativa en caso de que Orbitron no cargue */
+    -fx-font-size: 16px; /* Tamaño de la fuente */
+    -fx-font-weight: bold; /* Fuente en negrita */
+    -fx-border-radius: 50px; /* Bordes redondeados */
+    -fx-background-radius: 50px; /* Bordes redondeados en el fondo */
+    -fx-cursor: hand; /* Cambia el cursor al pasar sobre el botón */
+}
+
+/* Estilo cuando el botón es presionado */
+.jfx-button:pressed {
+    -fx-background-color: #0056b3; /* Fondo azul más oscuro al hacer clic */
+}
+
+/* Estilo al pasar el mouse sobre el botón (hover) */
+.jfx-button:hover {
+    -fx-background-color: #0056b3; /* Fondo azul más oscuro al pasar el mouse */
+    -fx-opacity: 0.9; /* Reduce la opacidad ligeramente para el efecto hover */
+}
+
+.split-menu-button {
+    -fx-background-color: #009dff; /* Fondo azul */
+    -fx-text-fill: white; /* Texto blanco */
+    -fx-font-family: 'Arial', sans-serif; /* Fuente alternativa */
+    -fx-font-size: 16px; /* Tamaño de la fuente */
+    -fx-font-weight: bold; /* Fuente en negrita */
+    -fx-border-radius: 50px; /* Bordes redondeados */
+    -fx-background-radius: 50px; /* Fondo redondeado */
+    -fx-cursor: hand; /* Cambia el cursor al pasar el ratón */
+}
+
+.split-menu-button:hover {
+    -fx-background-color: #007acc; /* Fondo más oscuro al pasar el ratón */
+}
+
+.split-menu-button .arrow {
+    -fx-text-fill: white; /* Color de la flecha */
+}
+
+/* Estilos generales del chat */
+#chatBox {
+    -fx-background-color: #f4f4f4;
+    -fx-padding: 10;
+    -fx-font-size: 14px;
+    -fx-font-family: "Arial";
+}
+
+/* Estilo de los mensajes en el chat */
+.message {
+    -fx-background-color: #a2a99c; /* Mensajes de otros usuarios */
+    -fx-padding: 10px;
+    -fx-margin-bottom: 5px;
+    -fx-alignment: center-left;
+    -fx-background-radius: 10px;
+    -fx-text-fill: black;
+    -fx-min-width: 250px;
+    -fx-max-width: 500px;
+    -fx-wrap-text: true;
+}
+
+/* Estilo de los mensajes enviados por el usuario activo (alineados a la derecha) */
+.message.user {
+    -fx-background-color: rgba(0, 225, 255, 0.79);
+    -fx-text-fill: #111111;
+    -fx-alignment: center-right;
+    -fx-background-radius: 10px;
+    -fx-padding: 10px;
+    -fx-min-width: 250px;
+    -fx-max-width: 500px;
+}
+
+/* Estilo del TextField para no tener texto blanco */
+#txt {
+    -fx-text-fill: black;
+    -fx-background-color: white;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+}
+
+
+
+/* Estilo para el Slider */
+/* Estilo para el Slider */
+.slider {
+    -fx-background-color: transparent; /* Fondo transparente */
+    -fx-control-inner-background: #009dff; /* Fondo de la pista */
+    -fx-padding: 10px; /* Espaciado interno */
+}
+
+.slider .track {
+    -fx-background-color: #007acc; /* Pista más oscura */
+    -fx-background-radius: 50px; /* Bordes redondeados */
+    -fx-border-radius: 50px;
+    -fx-pref-height: 6px; /* Altura de la pista */
+}
+
+.slider .thumb {
+    -fx-background-color: white; /* Fondo del control deslizante */
+    -fx-border-color: #007acc; /* Borde azul oscuro */
+    -fx-border-width: 2px;
+    -fx-background-radius: 50%; /* Redondeado */
+    -fx-pref-width: 14px; /* Tamaño del control */
+    -fx-pref-height: 14px;
+}
+
+.slider:hover .thumb {
+    -fx-background-color: #007acc; /* Fondo azul oscuro al pasar el ratón */
+    -fx-border-color: white; /* Borde blanco */
+}
+
+/* Estilo para el Label */
+.label2 {
+    -fx-text-fill: white; /* Texto blanco */
+    -fx-font-family: 'Arial', sans-serif; /* Fuente alternativa */
+    -fx-font-size: 14px; /* Tamaño de la fuente más pequeño */
+    -fx-font-weight: bold; /* Negrita */
+    -fx-padding: 5px 10px; /* Espaciado interno */
+    -fx-border-radius: 50px; /* Bordes redondeados */
+    -fx-background-radius: 50px; /* Fondo redondeado */
+    -fx-background-color: #009dff; /* Fondo azul */
+    -fx-alignment: center; /* Centrado del texto */
+}
+
+.label2:hover {
+    -fx-background-color: #007acc; /* Fondo azul oscuro al pasar el ratón */
+    -fx-text-fill: white; /* Texto blanco (sin cambio en hover para mantener consistencia) */
+}
+
+/* Estilo para el Color Picker */
+.color-picker {
+    -fx-background-color: #009dff; /* Fondo azul */
+    -fx-border-radius: 50px; /* Bordes redondeados */
+    -fx-background-radius: 50px;
+    -fx-border-color: white; /* Borde blanco */
+    -fx-border-width: 2px; /* Grosor del borde */
+    -fx-padding: 10px; /* Espaciado interno */
+}
+
+.color-picker .label {
+    -fx-text-fill: white; /* Texto blanco */
+    -fx-font-family: 'Arial', sans-serif;
+    -fx-font-size: 14px; /* Tamaño de fuente más pequeño */
+    -fx-font-weight: normal; /* Texto normal, no negrita */
+}
+
+.color-picker:hover {
+    -fx-background-color: #007acc; /* Fondo más oscuro al pasar el ratón */
+}
+
+.mensaje-propio {
+    -fx-background-color: #cce5ff;
+    -fx-padding: 8;
+    -fx-background-radius: 10;
+    -fx-wrap-text: true;
+}
+
+.mensaje-ajeno {
+    -fx-background-color: #f0f0f0;
+    -fx-padding: 8;
+    -fx-background-radius: 10;
+    -fx-alignment: LEFT;
+    -fx-wrap-text: true;
+}

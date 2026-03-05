@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" styleClass="root-interfaceAlertas" stylesheets="@../../../css/style.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gui.login.AleertaController">
+    <children>
+        <VBox alignment="TOP_RIGHT" prefHeight="78.0" prefWidth="960.0" styleClass="root-interfaceAlertas" stylesheets="@../../../css/style.css" AnchorPane.bottomAnchor="450.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Button fx:id="btnBack" maxHeight="40.0" maxWidth="60.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Volvertecnico" prefHeight="40.0" prefWidth="70.0" stylesheets="@../../../css/style.css" text="Back">
+                    <effect>
+                        <Lighting light="$null">
+                            <bumpInput>
+                                <Shadow />
+                            </bumpInput>
+                        </Lighting>
+                    </effect>
+                    <styleClass>
+                        <String fx:value="jfx-button" />
+                        <String fx:value="jfx-button:pressed" />
+                        <String fx:value="jfx-button:hover" />
+                    </styleClass>
+                </Button>
+            </children>
+            <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+            </padding>
+        </VBox>
+        <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" spacing="25.0" stylesheets="@../../../css/style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="90.0">
+            <children>
+                <Button fx:id="btnPP" layoutX="390.0" layoutY="260.0" maxHeight="80.0" maxWidth="600.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" style="-fx-text-fill: white;" stylesheets="@../../../css/style.css" text="Sensor Movimiento" VBox.vgrow="ALWAYS">
+                    <styleClass>
+                        <String fx:value=".jfx-button:pressed" />
+                        <String fx:value="jfx-button" />
+                        <String fx:value="jfx-button:hover" />
+                    </styleClass>
+                    <effect>
+                        <Lighting light="$null">
+                            <bumpInput>
+                                <Shadow />
+                            </bumpInput>
+                        </Lighting>
+                    </effect>
+                </Button>
+                <Button fx:id="btnGaraje" layoutX="390.0" layoutY="228.0" maxHeight="80.0" maxWidth="600.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" style="-fx-text-fill: white;" stylesheets="@../../../css/style.css" text="Sensor Iluminacion" VBox.vgrow="ALWAYS">
+                    <styleClass>
+                        <String fx:value=".jfx-button:pressed" />
+                        <String fx:value="jfx-button" />
+                        <String fx:value="jfx-button:hover" />
+                    </styleClass>
+                    <effect>
+                        <Lighting light="$null">
+                            <bumpInput>
+                                <Shadow />
+                            </bumpInput>
+                        </Lighting>
+                    </effect>
+                </Button>
+                <Button fx:id="btnGaraje2" layoutX="390.0" layoutY="196.0" maxHeight="80.0" maxWidth="600.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" style="-fx-text-fill: white;" stylesheets="@../../../css/style.css" text="Sensor Temperatura" VBox.vgrow="ALWAYS">
+                    <styleClass>
+                        <String fx:value=".jfx-button:pressed" />
+                        <String fx:value="jfx-button" />
+                        <String fx:value="jfx-button:hover" />
+                    </styleClass>
+                    <effect>
+                        <Lighting light="$null">
+                            <bumpInput>
+                                <Shadow />
+                            </bumpInput>
+                        </Lighting>
+                    </effect>
+                </Button>
+                <Button fx:id="btnGimnasio" layoutX="390.0" layoutY="164.0" maxHeight="80.0" maxWidth="600.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" style="-fx-text-fill: white;" stylesheets="@../../../css/style.css" text="Corriente Puertas" VBox.vgrow="ALWAYS">
+                    <styleClass>
+                        <String fx:value=".jfx-button:pressed" />
+                        <String fx:value="jfx-button" />
+                        <String fx:value="jfx-button:hover" />
+                    </styleClass>
+                    <effect>
+                        <Lighting light="$null">
+                            <bumpInput>
+                                <Shadow />
+                            </bumpInput>
+                        </Lighting>
+                    </effect>
+                </Button>
+            </children>
+            <padding>
+                <Insets bottom="200.0" left="350.0" right="350.0" top="200.0" />
+            </padding>
+        </VBox>
+    </children>
+    <effect>
+        <DropShadow />
+    </effect>
+</AnchorPane>

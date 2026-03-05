@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="540.0" prefWidth="960.0" styleClass="root-interfaceAcceso" stylesheets="@../../../css/style.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gui.login.AIResidenteController">
+   <children>
+      <VBox alignment="TOP_RIGHT" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="450.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="btnBack" maxHeight="40.0" maxWidth="90.0" mnemonicParsing="false" onAction="#volverMenu" prefHeight="40.0" prefWidth="90.0" styleClass="jfx-button" text="back">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect></Button>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="40.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="90.0">
+         <children>
+            <Button fx:id="btnGimnasio" maxHeight="80.0" maxWidth="600.0" mnemonicParsing="false" onAction="#abrirPuertaGimnasio" prefHeight="40.0" prefWidth="360.0" stylesheets="@../../../css/style.css" text="Puerta Gimnasio" VBox.vgrow="ALWAYS">
+               <styleClass>
+                  <String fx:value="jfx-button" />
+                  <String fx:value="jfx-button:" />
+               </styleClass>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect></Button>
+            <Button fx:id="btnGaraje2" maxHeight="80.0" maxWidth="600.0" mnemonicParsing="false" onAction="#abrirPuertaGaraje2" prefHeight="40.0" styleClass="jfx-button" text="Puerta del Garaje 2" VBox.vgrow="ALWAYS">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect></Button>
+            <Button fx:id="btnGaraje" maxHeight="80.0" maxWidth="600.0" mnemonicParsing="false" onAction="#abrirPuertaGaraje1" prefHeight="40.0" prefWidth="99.0" styleClass="jfx-button" text="Puerta del Garaje 1" VBox.vgrow="ALWAYS">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect></Button>
+            <Button fx:id="btnPP" maxHeight="80.0" maxWidth="600.0" mnemonicParsing="false" onAction="#abrirPuertaPrincipal" prefHeight="40.0" styleClass="jfx-button" text="Puerta principal" VBox.vgrow="ALWAYS">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect></Button>
+            <Label fx:id="lbl" prefHeight="14.0" prefWidth="250.0" />
+         </children>
+         <padding>
+            <Insets bottom="60.0" left="300.0" right="300.0" top="80.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

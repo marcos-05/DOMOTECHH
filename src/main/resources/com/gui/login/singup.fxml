@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="540.0" prefWidth="960.0" styleClass="root-interface1" stylesheets="@../../../css/style.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gui.login.SingupController">
+   <children>
+      <VBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" spacing="15.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextField fx:id="txt_username" maxHeight="60.0" maxWidth="500.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="200.0" promptText="User" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 3px 0px; -fx-border-color: white; -fx-alignment: white;" stylesheets="@../../../css/style.css">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="text-field:focused" />
+                  <String fx:value="text-field" />
+               </styleClass>
+            </TextField>
+            <TextField fx:id="txt_edad" layoutX="330.0" layoutY="150.0" maxHeight="60.0" maxWidth="500.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="200.0" promptText="Age" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 3px 0px; -fx-border-color: white; -fx-alignment: white;" stylesheets="@../../../css/style.css">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="text-field:focused" />
+                  <String fx:value="text-field" />
+               </styleClass>
+            </TextField>
+            <TextField fx:id="txt_gmail" layoutX="330.0" layoutY="178.0" maxHeight="60.0" maxWidth="500.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="200.0" promptText="Gmail" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 3px 0px; -fx-border-color: white; -fx-alignment: white;" stylesheets="@../../../css/style.css">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="text-field:focused" />
+                  <String fx:value="text-field" />
+               </styleClass>
+            </TextField>
+            <PasswordField fx:id="txt_password" maxHeight="60.0" maxWidth="500.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="200.0" promptText="Password" style="-fx-border-width: 0px 0px 3px 0px; -fx-background-color: trasparent; -fx-border-color: white;" styleClass="password-field">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </PasswordField>
+            <TextField fx:id="txt_type" layoutX="330.0" layoutY="284.0" maxHeight="60.0" maxWidth="500.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="200.0" promptText="Que eres?" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 3px 0px; -fx-border-color: white; -fx-alignment: white;" stylesheets="@../../../css/style.css">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="text-field:focused" />
+                  <String fx:value="text-field" />
+               </styleClass>
+            </TextField>
+            <TextField fx:id="txt_nombreComunidad" layoutX="330.0" layoutY="365.0" maxHeight="60.0" maxWidth="500.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="200.0" promptText="Nombre Comunidad" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 3px 0px; -fx-border-color: white; -fx-alignment: white;" stylesheets="@../../../css/style.css">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="text-field:focused" />
+                  <String fx:value="text-field" />
+               </styleClass>
+            </TextField>
+            <Label fx:id="lbl_validation" prefHeight="29.0" prefWidth="342.0" stylesheets="@../../../css/style.css">
+               <styleClass>
+                  <String fx:value="label-texto" />
+                  <String fx:value="label" />
+               </styleClass></Label>
+            <Button fx:id="btn_register" maxHeight="40.0" maxWidth="200.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#register" prefHeight="40.0" prefWidth="180.0" style="-fx-text-fill: white;" stylesheets="@../../../css/style.css" text="REGISTER" VBox.vgrow="ALWAYS">
+               <styleClass>
+                  <String fx:value=".jfx-button:pressed" />
+                  <String fx:value="jfx-button" />
+                  <String fx:value="jfx-button:hover" />
+               </styleClass>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                  </Lighting>
+               </effect></Button>
+         </children>
+         <padding>
+            <Insets bottom="175.0" left="320.0" right="320.0" top="300.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

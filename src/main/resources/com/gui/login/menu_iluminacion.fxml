@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="540.0" prefWidth="960.0" styleClass="root-interfaceIluminacion" stylesheets="@../../../css/style.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gui.login.IluminacionController">
+   <children>
+      <VBox alignment="TOP_RIGHT" prefHeight="109.0" prefWidth="958.0" spacing="10.0" AnchorPane.bottomAnchor="431.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <padding>
+            <Insets bottom="20.0" left="850.0" right="20.0" top="20.0" />
+         </padding>
+         <opaqueInsets>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </opaqueInsets>
+         <children>
+            <Button fx:id="mapa" maxHeight="70.0" maxWidth="130.0" mnemonicParsing="false" onAction="#Mapa" prefHeight="30.0" prefWidth="70.0" stylesheets="@../../../css/style.css" text="Mapa">
+               <effect>
+                  <Lighting light="$null">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                  </Lighting>
+               </effect>
+               <styleClass>
+                  <String fx:value="jfx-button" />
+                  <String fx:value="jfx-button:pressed" />
+                  <String fx:value="jfx-button:hover" />
+               </styleClass></Button>
+            <Button fx:id="btn_volvermenu" maxHeight="70.0" maxWidth="130.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#VolverInicio" prefHeight="27.0" prefWidth="88.0" stylesheets="@../../../css/style.css" text="Back">
+               <effect>
+                  <Lighting light="$null">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                  </Lighting>
+               </effect>
+               <styleClass>
+                  <String fx:value="jfx-button" />
+                  <String fx:value="jfx-button:pressed" />
+                  <String fx:value="jfx-button:hover" />
+               </styleClass>
+            </Button>
+         </children></VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="90.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="200.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label alignment="CENTER" maxHeight="80.0" maxWidth="350.0" prefHeight="27.0" prefWidth="127.0" stylesheets="@../../../css/style.css" text="Intensidad de luz" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" />
+                     </padding>
+                     <styleClass>
+                        <String fx:value="label2" />
+                        <String fx:value="label2:hover" />
+                     </styleClass>
+                     <effect>
+                        <Lighting light="$null">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                        </Lighting>
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" maxHeight="80.0" maxWidth="350.0" prefHeight="27.0" prefWidth="144.0" stylesheets="@../../../css/style.css" text="Tonalidad" textFill="WHITE">
+                     <styleClass>
+                        <String fx:value="label2" />
+                        <String fx:value="label2:hover" />
+                     </styleClass>
+                     <effect>
+                        <Lighting light="$null">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                        </Lighting>
+                     </effect>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="40.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label fx:id="lbl_validation" alignment="CENTER" maxHeight="80.0" maxWidth="350.0" prefHeight="43.0" prefWidth="221.0" stylesheets="@../../../css/style.css" text="FAROLAS ZONA A" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" />
+                     </padding>
+                     <styleClass>
+                        <String fx:value="label2" />
+                        <String fx:value="label2:hover" />
+                     </styleClass>
+                     <effect>
+                        <Lighting light="$null">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                        </Lighting>
+                     </effect>
+                  </Label>
+                  <Slider fx:id="slider1" maxWidth="300.0" stylesheets="@../../../css/style.css" HBox.hgrow="ALWAYS" />
+                  <ColorPicker fx:id="colorpicker1" maxWidth="300.0" styleClass=".color-picker" stylesheets="@../../../css/style.css" HBox.hgrow="ALWAYS">
+                     <effect>
+                        <Lighting light="$null">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                        </Lighting>
+                     </effect>
+                  </ColorPicker>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="40.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label fx:id="lbl_validation1" alignment="CENTER" maxWidth="350.0" prefHeight="43.0" prefWidth="221.0" stylesheets="@../../../css/style.css" text="FAROLAS ZONA B" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" />
+                     </padding>
+                     <styleClass>
+                        <String fx:value="label2" />
+                        <String fx:value="label2:hover" />
+                     </styleClass>
+                     <effect>
+                        <Lighting light="$null">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                        </Lighting>
+                     </effect>
+                  </Label>
+                  <Slider fx:id="slider2" maxWidth="300.0" HBox.hgrow="ALWAYS" />
+                  <ColorPicker fx:id="colorpicker2" maxWidth="300.0" HBox.hgrow="ALWAYS">
+                     <effect>
+                        <Lighting light="$null">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                        </Lighting>
+                     </effect>
+                  </ColorPicker>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="40.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label fx:id="lbl_validation2" alignment="CENTER" maxWidth="350.0" prefHeight="43.0" prefWidth="221.0" stylesheets="@../../../css/style.css" text="FAROLAS ZONA GYM" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" />
+                     </padding>
+                     <styleClass>
+                        <String fx:value="label2" />
+                        <String fx:value="label2:hover" />
+                     </styleClass>
+                     <effect>
+                        <Lighting light="$null">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                        </Lighting>
+                     </effect>
+                  </Label>
+                  <Slider fx:id="slider3" maxWidth="300.0" HBox.hgrow="ALWAYS" />
+                  <ColorPicker fx:id="colorpicker3" maxWidth="300.0" HBox.hgrow="ALWAYS">
+                     <effect>
+                        <Lighting light="$null">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                        </Lighting>
+                     </effect>
+                  </ColorPicker>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="110.0" layoutY="276.0" prefHeight="100.0" prefWidth="200.0" spacing="40.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label fx:id="lbl_validation21" alignment="CENTER" maxWidth="350.0" prefHeight="43.0" prefWidth="221.0" stylesheets="@../../../css/style.css" text="FAROLAS ZONA PISCINA" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" />
+                     </padding>
+                     <styleClass>
+                        <String fx:value="label2" />
+                        <String fx:value="label2:hover" />
+                     </styleClass>
+                     <effect>
+                        <Lighting light="$null">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                        </Lighting>
+                     </effect>
+                  </Label>
+                  <Slider fx:id="slider4" maxWidth="300.0" HBox.hgrow="ALWAYS" />
+                  <ColorPicker fx:id="colorpicker4" maxWidth="300.0" HBox.hgrow="ALWAYS">
+                     <effect>
+                        <Lighting light="$null">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                        </Lighting>
+                     </effect>
+                  </ColorPicker>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="100.0" left="200.0" right="200.0" top="125.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

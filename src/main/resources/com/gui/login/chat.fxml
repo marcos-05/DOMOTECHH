@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="root" prefHeight="540.0" prefWidth="960.0" styleClass="root-interfaceChat" stylesheets="@../../../css/style.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gui.login.ChatController">
+   <children>
+
+      <VBox fx:id="principal" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="960.0" spacing="25.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="90.0">
+         <children>
+            <ScrollPane fx:id="scrollPane" fitToHeight="false" fitToWidth="true" maxHeight="1.7976931348623157E308" maxWidth="1000.0" prefHeight="400.0" prefWidth="360.0" stylesheets="@../../../css/style.css">
+               <content>
+                  <VBox fx:id="vboxChat" alignment="CENTER" spacing="10" VBox.vgrow="ALWAYS" />
+               </content>
+               <styleClass>
+                  <String fx:value="scroll-bar" />
+                  <String fx:value="scroll-bar:hover" />
+               </styleClass>
+            </ScrollPane>
+
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="txt" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="21.0" prefWidth="442.0">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </TextField>
+                  <Button fx:id="btn" onAction="#enviarMensaje" prefHeight="31.0" prefWidth="118.0" style="-fx-text-fill: white;" stylesheets="@../../../css/style.css" text="Enviar">
+                     <styleClass>
+                        <String fx:value=".jfx-button:pressed" />
+                        <String fx:value="jfx-button" />
+                        <String fx:value="jfx-button:hover" />
+                     </styleClass>
+                     <effect>
+                        <Lighting light="$null">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                        </Lighting>
+                     </effect>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="50.0" left="200.0" right="200.0" top="50.0" />
+         </padding>
+      </VBox>
+
+      <HBox alignment="TOP_RIGHT" maxHeight="180.0" maxWidth="-Infinity" prefHeight="90.0" prefWidth="960.0" AnchorPane.bottomAnchor="450.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <children>
+            <Button fx:id="backBtn" maxHeight="40.0" maxWidth="300.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#volverMenu" prefHeight="40.0" prefWidth="70.0" style="-fx-text-fill: white;" stylesheets="@../../../css/style.css" text="Back">
+               <styleClass>
+                  <String fx:value=".jfx-button:pressed" />
+                  <String fx:value="jfx-button" />
+                  <String fx:value="jfx-button:hover" />
+               </styleClass>
+               <effect>
+                  <Lighting light="$null">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                  </Lighting>
+               </effect>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
